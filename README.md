@@ -20,6 +20,7 @@ Exception Context:
 
  at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
  ```  
+ 
  ### Example stack trace normal CXF exception generation  
  ```  
  com.postini.pstn.soapapi.v2.automatedbatch.BatchException_Exception: meaningles exception message
