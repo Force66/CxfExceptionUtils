@@ -8,6 +8,28 @@ The exceptions that CXF generates for WSDL soap faults (e.g. input validations, 
 ## Installation Instructions  
 CxfExceptionUtils is easy to install whether you use maven or not.
 
+### Example stack trace print using CxfSoapFaultException or CxfSoapFaultRuntimeException  
+```  
+com.postini.pstn.soapapi.v2.automatedbatch.BatchException_Exception: meaningless exception message
+Exception Context:
+ [1:cxfclient.message=meaningful embedded cxf info]
+---------------------------------
+ at org.force66.cxfutils.CxfSoapFaultRuntimeExceptionTest.testBasic(CxfSoapFaultRuntimeExceptionTest.java:28)
+ at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+
+ at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ ```  
+ ### Example stack trace normal CXF exception generation  
+ ```  
+ com.postini.pstn.soapapi.v2.automatedbatch.BatchException_Exception: meaningles exception message
+ at org.force66.cxfutils.CxfSoapFaultRuntimeExceptionTest.testBasic(CxfSoapFaultRuntimeExceptionTest.java:28)
+ at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+
+ at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ ```  
+
 ### Maven Users  
 Maven users can find dependency information [here](http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22CxfExceptionUtils%22).
 
