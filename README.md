@@ -8,7 +8,8 @@ The exceptions that CXF generates for WSDL soap faults (e.g. input validations, 
 ## Installation Instructions  
 CxfExceptionUtils is easy to install whether you use maven or not.
 
-### Maven Users  (forthcoming)
+### Maven Users  
+Maven users can find dependency information [here](http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22CxfExceptionUtils%22).
 
 ### Non-Maven Users  
 Include the following jars in your class path:  
